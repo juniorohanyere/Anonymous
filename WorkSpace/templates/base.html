@@ -14,8 +14,10 @@
 
 <body bgcolor = "brown">
 		
-	<div style = "float:right; height:100%; width:70%; background-color:grey; color:brown; padding-left:50">
-	
+	<div style = "float:right; background-color:grey; color:brown; padding-left:50">
+		{% load static %}
+		
+		<img src = "{% static 'bitmap.png' %}" style = "height:30; width:30" alt = "logo" >
 		{% block content %}
 		
 		{% endblock %}
