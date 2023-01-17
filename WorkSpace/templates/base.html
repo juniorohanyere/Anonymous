@@ -12,12 +12,13 @@
 	{% block stylesheet %}{% endblock %}
 </head>
 
-<body bgcolor = "brown">
+<body bgcolor = "black">
+	{% load static %}
+		
+		<img src = "{% static 'SkyLantern.png' %}" style = "height:120; width:100" alt = "logo" >
 		
 	<div style = "float:right; background-color:grey; color:brown; padding-left:50">
-		{% load static %}
 		
-		<img src = "{% static 'bitmap.png' %}" style = "height:30; width:30" alt = "logo" >
 		{% block content %}
 		
 		{% endblock %}
