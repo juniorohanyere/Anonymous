@@ -2,6 +2,8 @@
 
 <html lang = "en">
 
+{% load static %}
+
 <head>
 
 	<meta charset = "UTF-8">
@@ -10,27 +12,23 @@
 	<title> {% block title %}{% endblock title %} </title>
 	
 </head>
-{% load static %}
-<body style = "background:url ('{% static 'Skylantern.png' %}') no-repeat center center fixed; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; backgrouund-size:cover; width:device-width; height:700">
 
-	{% load static %}
-	<div class = "container-py" style = "background-color:orange; width:device-width; height:650;">
+<body style = "background-color:black; height:100px; width:device-width">
 	
-		<div class = "topnav" style = "width = device-width; background-color:orange;">
+	<div class = "topnav" style = "width:device-width; background-color:black;">
 		
-			<a class = "active" style = "color:black; margin-rights:30;" href = "/home"> 🏠️Home </a>
-			<a style = "color:black; margin-left:30;" href = "/"> ️👤️Contact </a>
-			<a style = "color:black; margin-left:30;" href = "#location"> 🌐️Location </a>
+		<a class = "active" style = "color:orange;" href = "/home"> Home </a>
+		<a style = "color:orange; margin-left:20;" href = "/"> ️Contact </a>
+		<a style = "color:orange; margin-left:20;" href = "#location"> Location </a>
+		<a style = "color:orange; margin-left:20;" href = "#chatnovel"> ChatNovel </a>
+	</div>	
+		
+	<div class = "centernav" style = "float:center;">
 	
-		</div>	
-		
-		<div class = "centernav" style = "float:center;">
-	
-			<img src = "{% static 'SkyLantern.png' %}" style = "flaot;center; height:300; width:300" alt = "skylantern.png" >
-		
-		</div>
+		<img src = "{% static 'skylantern.jpg' %}" style = "flaot;center; height:100; width:100; margin:50" alt = "skylantern.png" >
 		
 	</div>
+
 	<div style = "float:right; background-color:grey; color:brown; padding-left:50">
 		
 		{% block content %}
