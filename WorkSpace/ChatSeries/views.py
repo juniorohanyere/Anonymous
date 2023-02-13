@@ -7,7 +7,7 @@ from django.contrib import messages
 
 def home (request):
 
-	return render (request, 'base.html')
+	return render (request, 'home.html')
 	
 def register_request (request):
 
@@ -20,7 +20,7 @@ def register_request (request):
 			user = form.save ()
 			login (request, user)
 			messages.success (request, "Registration successful.")
-			return redirect ("home")
+			return redirect ("")
 			
 		messages.error (request, "Unsuccessful registration. Invalid information.")
 		
