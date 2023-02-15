@@ -18,8 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path ('', include ('ChatSeries.urls')),
+    path ('', include ('TickAway.urls')),
 ] 
 admin.site.site_header  =  "SkyLantern Administration"  
-admin.site.site_title  =  "SkyLantern admin site"
-admin.site.index_title  =  "SkyLantern ChatBook Admin"
+admin.site.site_title  =  "SkyLantern"
+admin.site.index_title  =  "TickAway Administration"
