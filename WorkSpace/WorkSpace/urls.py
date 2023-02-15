@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', include ('ChatSeries.urls')),
 ] 
+admin.site.site_header  =  "SkyLantern Administration"  
+admin.site.site_title  =  "SkyLantern admin site"
+admin.site.index_title  =  "SkyLantern ChatBook Admin"

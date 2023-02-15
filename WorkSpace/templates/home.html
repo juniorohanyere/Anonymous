@@ -9,25 +9,25 @@
 	<meta charset = "UTF-8">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 	
-	<title> {% block title %}{% endblock title %} </title>
+	<title> {% block title %} home {% endblock title %} </title>
 	
 </head>
 
-<body style = "background-image:url('{% static 'skylantern.jpg' %}'); text-align:center;">
+<body style = "background-color:black; text-align:center;">
 	
-	<div class = "topnav" style = "text-align:center; margin:0 auto; width:device-width; background-color:black;">
+	<div class = "topnav" style = "text-align:left; margin:0 auto; width:device-width; background-color:orange;">
 		
-		<a class = "active" style = "color:orange;" href = "/"> Home </a>
-		<a style = "color:orange; margin-left:20;" href = "/register"> ️Contact </a>
-		<a style = "color:orange; margin-left:20;" href = "#location"> Location </a>
-		<a style = "color:orange; margin-left:20;" href = "#chatnovel"> ChatSeries </a>
-		<a style = "color:orange; margin-left:20;" href = "#blog"> Blog </a>
-		<a style = "color:orange; margin-left:20;" href = "#about"> About </a>
+		<a class = "active" style = "color:blue;" href = "/"> Home </a>
+		<a style = "color:blue; margin-left:20;" href = "/register"> ️Contact </a>
+		<a style = "color:blue; margin-left:20;" href = "#location"> Location </a>
+		<a style = "color:blue; margin-left:20;" href = "#chatnovel"> ChatBook </a>
+		<a style = "color:blue; margin-left:20;" href = "#blog"> Blog </a>
+		<a style = "color:blue; margin-left:20;" href = "#about"> About </a>
 	</div>	
 		
 	<div class = "centernav" style = "text-align:center; margin:0 auto;float:center;">
 	
-		<img src = "{% static 'skylantern.jpg' %}" style = "margin-top:100; flaot;center; height:300; width:300;" alt = "skylantern.png" >
+		<img src = "{% static 'skylantern.jpg' %}" style = "margin-top:100; flaot;center; height:100; width:100;" alt = "skylantern.png" >
 		
 	</div>
 
