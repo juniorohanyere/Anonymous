@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'TickAway',
     'crispy_forms',
-    'django_rename_app',
     
 ]
 
