@@ -21,5 +21,5 @@ class NewUserForm (UserCreationForm):
 		if commit:
 		
 			user.save()
-			
+			user.create()
 		return user
